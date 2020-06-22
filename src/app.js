@@ -10,8 +10,10 @@ app.use(cors());
 
 const repositories = [];
 
-app.get("/repositories", (request, response) => {
-  // TODO
+app.get("/repositories", (request, response) => {  
+  const results = repositories 
+
+  return response.json(results);
 });
 
 app.post("/repositories", (request, response) => {
